@@ -1,0 +1,26 @@
+{
+    "name": "mikemartin/connect",
+    "type": "statamic-connect",
+    "autoload": {
+        "psr-4": {
+            "Mikemartin\\Aweber\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Connect",
+            "description": "Connect addon"
+        },
+        "laravel": {
+            "providers": [
+                "Mikemartin\\Aweber\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "statamic/cms": "dev-master",
+        "socialiteproviders/aweber": "dev-master",
+        "laravel/socialite": "^5.0@dev"
+    }
+}
